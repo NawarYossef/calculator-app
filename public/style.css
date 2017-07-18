@@ -1,0 +1,82 @@
+@import url("css-reset.css");
+
+/**/
+body {
+  background-color: #090f16 !important;
+}
+
+/*calculator body */
+.calculator-body {
+  width: 280px;
+  margin: 0 auto;
+  height: 260px;
+  background: #575c63;
+  border-left: 1px #575c63 solid;
+  border-right: 1px #575c63 solid;
+  border-bottom: 1px #575c63 solid;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.buttons-frame {
+  width: 250px;
+  margin: 0 auto 0 30px;
+  padding-top: 10px;
+}
+
+a {
+  width: 50px;
+  height: 42px;
+  margin-right: 2px;
+  margin-top: 4px;
+  display: inline-block;
+  font-size: 16px !important;
+  color: #e5e5e5 !important;
+}
+
+.divide-btn, #decimal {
+  font-size: 20px !important;
+}
+
+#zero, #decimal  {
+  width: 78px;
+   margin-top: -67px;
+}
+
+#evaluate {
+  width: 50px;
+  height: 90px;
+  vertical-align: top;
+  font-size: 30px !important;
+  padding-top: 10px;
+}
+
+/*screen */
+.screen {
+  width: 280px;
+  margin: 0 auto;
+  height: 75px;
+  margin-top: 200px;
+  background: #dbdbdb;
+  border-left: 15px #575c63 solid;
+  border-right: 15px #575c63 solid;
+  border-top: 15px #575c63 solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
+
+/*this class is added using Jquery if the evaluated number is too large to display on screen*/
+
+
+#display {
+  width: 280px;
+  height: 75px;
+  display: block;
+  font-size: 30px;
+  text-align: right;
+  padding-top: 8px;
+  padding-right: 40px;
+  overflow-x: scroll;
+  /*overflow-y: hidden;*/
+}
