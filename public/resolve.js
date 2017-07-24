@@ -59,6 +59,9 @@ class Resolve {
         if (input.join("").match(/[0-9][(x)|(\/)|(+)|(\-)][(=)]/g)) {
           that.lastInputDelete()
         }
+        // } else if (input.join("").match(/[0-9][(x)][0-9][(=)]/g)){
+        //   that.lastInputDelete()
+        // }
       });
     });
   }

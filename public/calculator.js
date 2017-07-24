@@ -1,4 +1,3 @@
-/* global $ */
 /* global Resolve */
 // display of large numbers on screen
 "use strict";
@@ -22,8 +21,8 @@ class Calculator extends Resolve {
     this.equalOperatorComb();
     this.multipleZeroInput();
     this.multZeroAfterOperator();
-    this.displayScreen();
     this.deleteEqualSign();
+    this.displayScreen();
     this.operatorConvertion();
     this.calculateExpression();
     this.displayTotal();
@@ -48,14 +47,14 @@ class Calculator extends Resolve {
   operatorConvertion() {
     $(document).ready(function() {
       $("#evaluate").click(function() {
-      input = input.join("").replace("x", "*").split('');
+      input = input.join("").replace(/x/g, "*").split('');
       });
     });
   }
 
   // delete '=' operator from input before evaluating expression. Otherwise, passing an expression  with  '=' to eval() returns an error.
   deleteEqualSign() {
-    let that = this
+    let that = this;
     $(document).ready(function() {
       $("#evaluate").click(function() {
         that.lastInputDelete();
@@ -81,8 +80,6 @@ class Calculator extends Resolve {
       });
     });
   }
-
-  // if evaluated result is too large then screen should allow for horizontal scroll
 
 
   resetForNewOperation() {
